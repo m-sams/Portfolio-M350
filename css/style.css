@@ -1,3 +1,21 @@
 *,body{
     font-family:helvetica;
 }
+
+@media (min-with:600px){
+    
+}
+.recent-works img{
+    width:300px;
+    height:300px;
+}
+#portrait img{
+    width:200px;
+    height:200px;
+}
+.prj-cards img{
+    width:200px;
+    height:200px;
+}
+
+
