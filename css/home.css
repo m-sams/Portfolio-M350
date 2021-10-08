@@ -16,11 +16,21 @@
     a:active{
         color:#4D5175;
     }
+    .site-header img{
+        width:70px;
+        height:50px;
+        border: 1px solid black;
+    }
+    header h1{
+        text-align:center;
+        border:1px solid black;
+        background-color:#FFF7F7;
+    }
     ul{
         list-style-type:none;
         margin-right:0px;
     }
-    .work-card img,a{
+    .work-cards img,a{
         width:100%;
     }
     .work-card-body{
@@ -39,7 +49,7 @@
     }
     .work-cards{
         border:1px solid black;
-        background-color:#D4CDCD;
+        background-color:#FFF7F7;
         width:100%;
         margin:auto;
     }
@@ -50,7 +60,7 @@
         padding-left:10px;
     }
     .social ul{
-        background-color:#D4CDCD;
+        background-color:#FFF7F7;
         border: 0.5px solid black;
         text-align:center;
     }
