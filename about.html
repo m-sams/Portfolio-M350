@@ -7,13 +7,25 @@
     <title>Sam's Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/about.css">
+    <script src="js/mobile_menu.js"></script>
 </head>
 
 <body id="home-page">
+    <nav class="side-nav" id="side-nav">
+        <button onclick="side_nav_close()" class="close-btn">Close &times;</button>
+            <ul class="nav-items">
+                <li><a href='home.html'>Home/Recent Projects</a></li><br>
+                <li><a href='about.html'>About</a></li><br>
+                <li><a href='classes.html'>Other Projects</a></li>
+            </ul>
+    </nav>
     <header class="site-header">
         <!-- add site wide header content here -->
         <div class="head-logo">
             <a href="home.html"><img src='media/logo.png' alt="Logo"></a>
+        </div>
+        <div class="head-side-btn">
+            <button class="open-btn" onclick="side_nav_open()">☰</button>
         </div>
     </header>
     

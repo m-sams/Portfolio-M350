@@ -7,26 +7,42 @@
     <title>Sam's Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/classes.css">
+    <script src="js/mobile_menu.js"></script>
 </head>
 
 <body id="home-page">
-    <header class="site-header">
-        <!-- add site wide header content here -->
+    <!--if bugged, swap header with nav-->
+   <div class="body-shift"> <!--body shift opens-->
+        <!--header content-->
+    <div class="logo-space">
         <div class="head-logo">
-           <a href="home.html"><img src='media/logo.png' alt="Logo"></a> 
+            <a href="home.html"><img src='media/logo.png' alt="Logo"></a>
         </div>
-        <h1>Other Work</h1>
+    </div>
+
+    <div class="head-side-btn">
+        <button class="open-btn" onclick="side_nav_open()">☰</button>
+    </div>
+
+        
+    <header class="site-header">
+        <h1>Other Work.</h1>
     </header>
-    
-    <main class="home-page">
-        <!-- add main page content here -->
-        <nav class="side-nav">
+       
+    <div class="nav-space">
+        <nav class="side-nav" id="side-nav">
+            <button onclick="side_nav_close()" class="close-btn">Close &times;</button>
             <ul class="nav-items">
-                <li><a href='home.html'>Home</a></li>
-                <li><a href='about.html'>About</a></li>
-                <li><a href='classes.html'>Class Projects</a></li>
+                <li><a href='home.html'>Home/Recent Projects</a></li><br>
+                <li><a href='about.html'>About</a></li><br>
+                <li><a href='classes.html'>Other Projects</a></li>
             </ul>
         </nav>
+    </div>
+    
+
+    <main class="home-page">
+        <!-- add main page content here -->
 
         <section class="prj-work">
             <!--<div class="prj-cards">
@@ -92,17 +108,18 @@
     </main>
     
     <footer class="site-footer">
-        <!-- add site-wide footer content here -->
+        <!--footer content-->
         <div class="social">
             <ul>
-                <li><a href='#'>LinkedIn</a></li>
-                <li><a href='#'>Twitter</a></li>
-                <li><a href='#'>Instagram</a></li>
-                <li><a href='#'>Email Me</a></li>
-                <!--Link stand-ins. Determine actual social links later-->
+                <li><a href='#'><img src="media/linkedin_logo.png"></a></li>
+                <li><a href='#'><img src="media/twt_logo.png"></a></li>
+                <li><a href='#'><img src="media/ig_logo.png"></a></li>
+                <li><a href='#'><img src="media/mail_logo.png"></a></li>
+                <!--Link stand-ins. Yet to determine actual links-->
             </ul>
         </div>
     </footer>
+    </div>
 
 </body>
 
