@@ -11,63 +11,67 @@
 </head>
 
 <body id="home-page">
+   <div class="body-shift"> <!--body shift opens-->
+    <!--header content-->
+<div class="logo-space">
+    <div class="head-logo">
+        <a href="home.html"><img src='media/logo.png' alt="Logo"></a>
+    </div>
+</div>
+
+<div class="head-side-btn">
+    <button class="open-btn" onclick="side_nav_open()">☰</button>
+</div>
+
+    
+<header class="site-header">
+    <h1>An Introduction.</h1>
+</header>
+   
+<div class="nav-space">
     <nav class="side-nav" id="side-nav">
         <button onclick="side_nav_close()" class="close-btn">Close &times;</button>
-            <ul class="nav-items">
-                <li><a href='home.html'>Home/Recent Projects</a></li><br>
-                <li><a href='about.html'>About</a></li><br>
-                <li><a href='classes.html'>Other Projects</a></li>
-            </ul>
+        <ul class="nav-items">
+            <li><a href='home.html'>Home/Recent Projects</a></li><br>
+            <li><a href='about.html'>About</a></li><br>
+            <li><a href='classes.html'>Other Projects</a></li>
+        </ul>
     </nav>
-    <header class="site-header">
-        <!-- add site wide header content here -->
-        <div class="head-logo">
-            <a href="home.html"><img src='media/logo.png' alt="Logo"></a>
-        </div>
-        <div class="head-side-btn">
-            <button class="open-btn" onclick="side_nav_open()">☰</button>
-        </div>
-    </header>
+</div>
     
-    <main class="home-page">
-        <!-- add main page content here -->
-        <nav class="side-nav">
-            <ul class="nav-items">
-                <li><a href='home.html'>Home</a></li>
-                <li><a href='about.html'>About</a></li>
-                <li><a href='classes.html'>Class Projects</a></li>
-            </ul>
-        </nav>
+<main class="home-page">
+    <!-- add main page content here -->
+<div id="int-style">
+    <section class="intro">
+        <div id="portrait">
+            <img src='media/placehold.jpg' alt="portrait">
+        </div> <br><br>
 
-        <section class="intro">
-            <div id="portrait">
-                <img src='media/placehold.jpg' alt="portrait">
-            </div> <br><br>
-
-            <div id="intro-text">
-                <h3>Some Info About Me</h3> 
-                <p>Hello! I am Malachi Samuels, Sam for short. I'm 19 years old from New York City
-                    and I'm a Multimedia Programming and Design major at BMCC completing my 3rd term. My Multimedia Programming
+        <div id="intro-text">
+            <h3>Some Info About Me</h3> 
+            <p>Hello! I am Malachi Samuels, Sam for short. I'm 19 years old from Bayside in Queens, New York.
+                    and I'm a Multimedia Programming and Design major at BMCC completing my 3rd term. My Multimedia Programming and Web Designing
                     journey began in high school, and since then I've been developing and refining
-                    my skills bit by bit. I hope you enjoy my work!</p>
-            </div>
-        </section>
-        
-    </main>
-    
-    <footer class="site-footer">
-        <!-- add site-wide footer content here -->
-        <div class="social">
-            <ul>
-                <li><a href='#'>LinkedIn</a></li>
-                <li><a href='#'>Twitter</a></li>
-                <li><a href='#'>Instagram</a></li>
-                <li><a href='#'>Email Me</a></li>
-                <!--Link stand-ins. Determine actual social links later-->
-            </ul>
+                    my skillset gradually. <br> 
+                    Visit the homepage and other projects pages to see my work.</p>
         </div>
-    </footer>
-
+    </section>
+    </div>
+</main>
+    
+<footer class="site-footer">
+    <!--footer content-->
+    <div class="social">
+        <ul>
+            <li><a href='#'><img src="media/linkedin_logo.png"></a></li>
+            <li><a href='#'><img src="media/twt_logo.png"></a></li>
+            <li><a href='#'><img src="media/ig_logo.png"></a></li>
+            <li><a href='#'><img src="media/mail_logo.png"></a></li>
+            <!--Link stand-ins. Yet to determine actual links-->
+        </ul>
+    </div>
+</footer>
+</div>
 </body>
 
 </html>
